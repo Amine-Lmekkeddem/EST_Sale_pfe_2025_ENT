@@ -1,0 +1,180 @@
+/* ------------ ----------- */
+
+/* 🌟 Style général du menu */
+/* .menu-container {
+  width: 100%;
+  min-width: 500px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around; /* Aligne les éléments horizontalement 
+  padding: 10px;
+  height: auto;
+} */
+
+.menu-container a {
+  text-decoration: none;
+  color: #003366;
+  font-size: 1.2rem;
+  padding: 10px 30px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-container a:hover {
+  background-color: #003366;
+  color: white;
+}
+
+.menu {
+  display: flex; /* Afficher les éléments en ligne */
+  justify-content: space-around; /* Espace uniforme entre les éléments */
+  width: 100%; /* Remplir toute la largeur */
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex; /* Affichage horizontal des items */
+}
+
+.menu li {
+  margin-right: 20px; /* Espacement entre les éléments */
+}
+
+/* Menu responsif */
+@media (max-width: 768px) {
+  .menu-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*
+--------------------
+*/
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .menu ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu li {
+  position: relative;
+  list-style: none;
+}
+
+.menu li ul {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.menu li:hover ul {
+  display: flex;
+} */
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu li {
+  position: relative;
+  list-style: none;
+}
+
+/* Sous-menu */
+.menu li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  flex-direction: column;
+  background-color: #ffffff; /* Fond blanc */
+  padding: 10px 6px;
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  z-index: 1000;
+  min-width: 260px;
+  transition: opacity 0.3s ease;
+}
+
+/* Affichage du sous-menu au survol */
+.menu li:hover ul {
+  display: flex;
+  opacity: 1;
+}
+
+/* Liens dans le sous-menu */
+.menu li ul li {
+  margin: 6px 0;
+}
+
+.menu li ul li a {
+  text-decoration: none;
+  color: #003366;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.menu li ul li a:hover {
+  color: #007acc;
+  font-weight: bold;
+}
+
+.menu-container a {
+  text-decoration: none;
+  color: #003366;
+  font-size: 1.2rem;
+  padding: 10px 30px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-container a:hover {
+  background-color: #003366;
+  color: white;
+}
+
+.menu-container span {
+  display: inline-flex; /* Pour aligner l'icône et le texte */
+  align-items: center;
+  gap: 8px; /* Espace entre icône et texte */
+  color: #003366;
+  font-size: 1.2rem;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-container span:hover {
+  background-color: #003366;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .menu li ul {
+    position: static;
+  }
+}

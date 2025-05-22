@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  cassandra:
+    restart: always
+
+  minio:
+    restart: always
+
+volumes:
+  cassandra_data:
+  minio_data:

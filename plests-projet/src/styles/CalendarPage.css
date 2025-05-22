@@ -1,0 +1,19 @@
+.calendar-page {
+  margin: auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+.calendar-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.calendar-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
